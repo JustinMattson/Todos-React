@@ -12,6 +12,11 @@ function Header() {
       <Link style={linkStyle} to="/todos-react/about">
         About
       </Link>
+      <br />
+      <small style={noteStyle}>
+        Combinations of back + refresh will break the route. <br /> This uses
+        fake backend.
+      </small>
     </header>
   );
 }
@@ -26,5 +31,8 @@ const headerStyle = {
 const linkStyle = {
   color: "#fff",
   textDecoration: "none",
+};
+const noteStyle = {
+  color: "#555",
 };
 export default Header;
